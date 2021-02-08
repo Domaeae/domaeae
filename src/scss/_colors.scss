@@ -1,0 +1,38 @@
+$colors: (
+  color1: rgba(249, 65, 68, 1),
+  color2: rgba(248, 150, 30, 1),
+  color3: rgba(249, 199, 79, 1),
+  color4: rgba(144, 190, 109, 1),
+  color5: rgba(67, 170, 139, 1),
+  color6: rgba(72, 86, 150, 1),
+  color7: rgba(33, 33, 33, 1),
+  colord1: #f93553,
+  colord2: #f77518,
+  colord3: #f9a718,
+  colord4: #93bf5a,
+  colord5: #37aa78,
+  colord6: #3b5796
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+/* ===================
+Material Color-Palette
+=================== */
+
+$mdcolors: (
+  color1: #3f51b5,
+  color2: #2196f3,
+  color3: #e91e63,
+  color4: #ff5722,
+  color5: #ff9800,
+  color6: #212121,
+  primary: #e91e63,
+  secondary: #ffff
+);
+
+@function mdcolor($mdpalette) {
+  @return map-get($mdcolors, $mdpalette);
+}
